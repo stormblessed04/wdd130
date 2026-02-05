@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
 :root {
   --primary-color: #1C3187;
   --secondary-color: #025F68;
   --accent1-color: #F5C400;
   --accent2-color: #D6D6D6;
 
-  --heading-font: Aladin;
-  --paragraph-font: "Google Sans Flex", Helvetica, sans-serif;
+  --heading-font: Aladin, Verdana, sans-serif;
+  --paragraph-font: "Google Sans Flex", Tahoma, sans-serif;
 
   --headline-color-on-white: #1C3187;  /* headlines on a white background */ 
   --headline-color-on-color: #F5C400; /* headlines on a colored background */ 
@@ -26,6 +28,8 @@ nav a {
     text-align: center;
     color: var(--nav-link-color);
     text-decoration: none;
+    font-family: var(--paragraph-font);
+    padding: 35px;
 }
 
 nav a:hover {
@@ -33,29 +37,45 @@ nav a:hover {
     color: var(--nav-hover-link-color);
 }
 
+body {
+    background-color: var(--accent2-color);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
 main section {
     text-align: center;
 }
 
-body {
-    background-color: var(--accent2-color);
+main section img {
+    box-sizing: border-box;
 }
 
 header {
     background-color: var(--primary-color);
 }
 
+h2 {
+    font-family: var(--paragraph-font);
+    margin: 0;
+}
+
 h4 {
     color: var(--primary-color);
+    font-family: var(--paragraph-font);
 }
 
 footer {
     background-color: var(--primary-color);
     color: var(--paragraph-color-on-color);
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer p {
     font-size: 1.2em;
+    font-family: var(--paragraph-font);
 }
 
 footer a {
@@ -71,10 +91,19 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .book, .join {
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
     text-decoration: none;
+    font-family: var(--paragraph-font);
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -91,24 +120,46 @@ footer p a:hover {
     text-align: center;
 }
 
-.msg {
-    background-color: var(--paragraph-background-color);
-}
-
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 .home-title {
     color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid var(--primary-color);
+}
+
+.msg {
+    background-color: var(--paragraph-background-color);
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
     color: var(--accent1-color);
+    font-family: var(--heading-font);
 }
 
 .msg p {
     color: var(--paragraph-color-on-color);
+    font-family: var(--paragraph-font);
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+#logo-link {
+    padding-top: 5px;
 }
 
 #content {
