@@ -133,6 +133,7 @@
 .yellow5 {
   width: 100%; 
   background-color: gold; 
+  min-height: 150px;
 } 
 .blue5 {
   width: 100%; 
