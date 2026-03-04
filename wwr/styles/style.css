@@ -250,8 +250,81 @@ footer .social img {
     width: 100%;
 }
 
+#rivers-hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 140px;
+    background-color: var(--nav-hover-background-color);
+    border-radius: 20px;
+}
+
+#rivers-hero-msg h1, #rivers-hero-msg h4 {
+    text-align: center;
+    color: var(--headline-color-on-color);
+}
+
+.rivers-title {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.destination {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    margin: 35px;
+    border-radius: 25px;
+    border: solid 8px var(--accent1-color);
+}
+
+.destination-text-left {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.img-top-left, .img-bottom-left {
+    grid-column: 3/4;
+}
+
+.destination-text-right {
+    grid-column: 2/4;
+    grid-row: 1/3;
+    text-align: right;
+}
+
+.img-top-right, .img-bottom-right {
+    grid-column: 1/2;
+}
+
+.img-top-right, .img-bottom-left, .img-bottom-right, .img-top-left {
+    display: block;
+    width: 80%;
+    margin: 35px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    border: solid 5px var(--paragraph-background-color);
+}
+
+.destination-text-left, .destination-text-right {
+    color: var(--primary-color);
+    padding: 20px;
+}
+
+.destination-title {
+    font-family: var(--heading-font);
+}
+
+.destination p {
+    font-family: var(--paragraph-font);
+
+}
+
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .destination{
         display: block;
         height: auto;
     }
@@ -268,13 +341,13 @@ footer .social img {
     #hero-msg {
         margin-top: 0;
     }
-    #hero-msg h4 {
+    #hero-msg h4, #rivers-hero-msg h4 {
         display: none;
     }
-    #hero-msg h1 {
+    #hero-msg h1, #rivers-hero-msg h4 {
         color: #6f7364;
     }
-    .home-title {
+    .home-title, .rivers-title {
         font-size: 25px;
     }
     .rivers-card, .camping-card, .rapids-card { 
@@ -291,5 +364,11 @@ footer .social img {
     }
     footer {
         margin-top: 25px;
+    }
+    .destination-text-right {
+        text-align: left;
+    }
+    .img-bottom-left, .img-bottom-right{
+        display: none;
     }
 }
