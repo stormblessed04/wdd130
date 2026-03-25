@@ -134,6 +134,60 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
+#page-intro {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    background-color: var(--accent1-color);
+    padding: 30px;
+}
+
+#page-intro #page-header {
+    width: 75%;
+    margin: 0 auto;
+    grid-column: 1/3;
+}
+
+#page-intro img {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 30px;
+    margin: auto 0;
+}
+
+#page-intro .section-text {
+    color: var(--secondary-color);
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 30px;
+    align-content: center;
+    font-size: 1.4em;
+}
+
+#license-info-section {
+    padding: 50px;
+    text-align: left;
+    overflow: auto;
+}
+
+#license-info-section .section-title {
+    text-align: left;
+    font-size: 2em;
+}
+
+#license-info-section .section-text {
+    padding-bottom: 60px;
+    font-size: 1.3em;
+}
+
+.img-right {
+    float: right;
+    width: 30%;
+    margin: 60px;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--paragraph-color-on-color);
@@ -160,6 +214,15 @@ footer p a:hover {
     }
     #msg-text {
         margin: 50px;
+    }
+    #page-intro {
+        display: block;
+    }
+    .img-right {
+        display: block;
+        float: none;
+        width: 70%;
+        margin: 0 auto;
     }
     nav, footer {
         flex-direction: column;
